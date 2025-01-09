@@ -10,12 +10,14 @@
     "format": "biome format ./src --write",
     "check": "biome check --apply ./src",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "template": "scaffdog generate"
   },
   "dependencies": {
     "next": "15.1.2",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "scaffdog": "^4.1.0"
   },
   "devDependencies": {
     "@biomejs/biome": "1.9.4",
