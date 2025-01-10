@@ -1,5 +1,5 @@
 "use client";
-import { ICONS, type Icons } from "@/constants/icons";
+import { ICONS, type Icons } from "@/components/atoms/Icon/constants/icons";
 
 type Props = {
   name: Icons;
