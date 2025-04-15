@@ -1,0 +1,18 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  leading-trim: both;
+  text-edge: cap;
+  color: white;
+}
+
+.icon {
+  height: 3rem;
+  width: 3rem;
+  transform: rotate(15deg);
+}
+
+.logoText {
+  font-size: 44px;
+}

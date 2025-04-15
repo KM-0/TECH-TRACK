@@ -1,0 +1,9 @@
+/* fonts.module.css */
+.fontInter {
+  font-family: var(--font-inter);
+}
+
+.antialiased {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
