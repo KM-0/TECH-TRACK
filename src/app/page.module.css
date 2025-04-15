@@ -113,3 +113,13 @@
     padding: 3rem 7rem;
   }
 }
+
+.image {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .image {
+    display: block;
+  }
+}
