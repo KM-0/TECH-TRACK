@@ -7,8 +7,10 @@
   gap: 10;
   border-radius: var(--border-radius-full);
   padding: 10;
+  background-color: var(--color-gray-400);
+  color: var(--color-gray-100);
 }
 
 .container:hover .wrapper {
-  background-color: #87ceeb;
+  background-color: var(--color-gray-600);
 }

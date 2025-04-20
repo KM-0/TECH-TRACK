@@ -11,7 +11,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <div className={styles.container}>
       <div className={styles.sidebar}>
-        <LinkButton linkText="Home" href={"/"} icon={<HomeIcon />}></LinkButton>
+        <LinkButton href={"/"}>hoge</LinkButton>
       </div>
       <div className={styles.content}>{children}</div>
     </div>
