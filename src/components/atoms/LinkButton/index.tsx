@@ -1,19 +1,36 @@
-import Link, { LinkProps } from "next/link";
-import { ReactNode } from "react";
 import styles from "./style.module.css";
+import {
+  Cog6ToothIcon,
+  HomeIcon,
+  UserCircleIcon,
+} from "@heroicons/react/24/outline";
 
 type Props = {
-  linkText: string;
-  icon: ReactNode;
-} & Pick<LinkProps, "href">;
+  name: string;
+  iconSize?: number;
+  icon: MenuIcon;
+} & Pick<React.LinkHTMLAttributes<HTMLLinkElement>, "href">;
 
-export const LinkButton: React.FC<Props> = ({ linkText, icon, href }) => {
+const MENU_ICON = {
+  home: (size: Props["iconSize"]) => <HomeIcon height={size} />,
+  user: (size: Props["iconSize"]) => <UserCircleIcon height={size} />,
+  setting: (size: Props["iconSize"]) => <Cog6ToothIcon height={size} />,
+} as const;
+
+type MenuIcon = keyof typeof MENU_ICON;
+
+export const LinkButton: React.FC<Props> = ({
+  name,
+  href,
+  iconSize = 40,
+  icon,
+}) => {
   return (
-    <Link href={href} className={styles.container}>
+    <a href={href} className={styles.container}>
       <div className={styles.wrapper}>
-        <div style={{ width: 20 }}>{icon}</div>
-        <div>{linkText}</div>
+        {MENU_ICON[icon](iconSize)}
+        <p className={styles.text}>{name}</p>
       </div>
-    </Link>
+    </a>
   );
 };
