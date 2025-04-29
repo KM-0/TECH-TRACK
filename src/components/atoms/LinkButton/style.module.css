@@ -6,11 +6,15 @@
 .wrapper {
   display: flex;
   gap: 10;
+  align-items: center;
   border-radius: var(--border-radius-full);
-  padding-block: 10;
-  padding-inline: 20;
+  padding-inline: 20px;
   background-color: var(--color-gray-400);
   color: var(--color-gray-100);
+}
+
+.text {
+  font-size: 24px;
 }
 
 .container:hover .wrapper {
