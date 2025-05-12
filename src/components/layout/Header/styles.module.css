@@ -1,0 +1,8 @@
+.header {
+  padding-block: var(--spacing-x3l);
+}
+
+.container {
+  max-width: 640px;
+  margin-inline: auto;
+}
